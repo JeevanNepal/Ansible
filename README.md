@@ -13,6 +13,9 @@ Communicates through SSH.
 It uses playbook as the code storage bucket.
 
 
+Ansible uses push mechanism to do the operations.
+
+
 DEMO:
 Set Up Lab Environment for Ansible:
 
