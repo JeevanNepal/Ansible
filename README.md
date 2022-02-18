@@ -32,7 +32,10 @@ open the vi editor to open hosts file:
 
 vi /etc/ansible/hosts
 
+create a group with private IP address of the hosts under ungrouped:
 
+[demo]
+IPv4(private Ips of the nodes)
 
 
 
