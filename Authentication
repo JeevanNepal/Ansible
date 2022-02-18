@@ -1,4 +1,4 @@
-Creating Keys (public & Private):
+Creating Keys (public & Private)/ Trust Relationship(between root - root & user - user).
 
 Now go to ansible server and create key. Run the below command.
 
@@ -12,3 +12,7 @@ ls
 
 2 keys will be displayed.
 ex: id_rsa    id_rsa_pub
+
+Now copy the public key in both the nodes.
+
+ssh-copy-id 
