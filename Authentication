@@ -2,7 +2,7 @@ Creating Keys (public & Private)/ Trust Relationship(between root - root & user 
 
 Now go to ansible server and create key. Run the below command.
 
-[ansible@ip] $ ssh keygen
+[ansible@ip] $ ssh_keygen
 ls -a
 .ssh (this file will be displayed)
 
