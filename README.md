@@ -56,10 +56,16 @@ passwd: all authentication tokens updated successfully.
 [root@ip-172-31-35-13 ec2-user]# 
 
 
-To give previlege to user got to visudo file and add user in root premission: ansible ALL=(ALL) NOPASSWD: ALL
+To give previlege to user go to visudo file and add user in root premission: ansible ALL=(ALL) NOPASSWD: ALL
 
 
 To establish a connection with node got to ssh configuration file: vi /etc/ssh/sshd_config
 
+in file uncomment premit root login yes
+
+make above passwordauth yes and below one coment it
+
+To make the changes sync in configuration file we need to restart the services: service sshd restart
 
 
+Now to access nodes use ssh +node IPs.
