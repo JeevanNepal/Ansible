@@ -28,5 +28,14 @@ sudo amazon-linux-extras install ansible2
 
 yum install git python python-level python-pip openssl -y
 
+open the vi editor to open hosts file:
+
+vi /etc/ansible/hosts
+
+
+
+
+
+
 
 
