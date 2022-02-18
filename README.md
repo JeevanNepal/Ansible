@@ -47,7 +47,19 @@ change the file execution mode if the file is not executable:
 chmod +x /etc/ansible/ansible.cfg
 
 
+2-user]# adduser ansible
+[root@ip-172-31-35-13 ec2-user]# passwd ansible 
+Changing password for user ansible.
+New password: 
+Retype new password: 
+passwd: all authentication tokens updated successfully.
+[root@ip-172-31-35-13 ec2-user]# 
 
+
+To give previlege to user got to visudo file and add user in root premission: ansible ALL=(ALL) NOPASSWD: ALL
+
+
+To establish a connection with node got to ssh configuration file: vi /etc/ssh/sshd_config
 
 
 
