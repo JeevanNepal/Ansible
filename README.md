@@ -38,6 +38,11 @@ create a group with private IP address of the hosts under ungrouped:
 IPv4(private Ips of the nodes)
 
 
+Open aisuble configuration file:
+
+vi /etc/ansible/ansible.cfg
+
+
 
 
 
