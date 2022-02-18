@@ -1,1 +1,14 @@
-Creating keys (public & Private):
+Creating Keys (public & Private):
+
+Now go to ansible server and create key. Run the below command.
+
+[ansible@ip] $ ssh keygen
+ls -a
+.ssh (this file will be displayed)
+
+go to .ssh file (cd .ssh/)
+
+ls
+
+2 keys will be displayed.
+ex: id_rsa    id_rsa_pub
