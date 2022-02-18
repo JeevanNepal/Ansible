@@ -42,6 +42,10 @@ Open aisuble configuration file:
 
 vi /etc/ansible/ansible.cfg
 
+change the file execution mode if the file is not executable:
+
+chmod +x /etc/ansible/ansible.cfg
+
 
 
 
