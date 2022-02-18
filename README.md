@@ -22,5 +22,11 @@ Ansible uses push mechanism to do the operations.
 DEMO:
 Set Up Lab Environment for Ansible:
 
+Ansible in AWS Console:
+
+sudo amazon-linux-extras install ansible2
+
+yum install git python python-level python-pip openssl -y
+
 
 
