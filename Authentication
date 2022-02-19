@@ -15,4 +15,6 @@ ex: id_rsa    id_rsa_pub
 
 Now copy the public key in both the nodes.
 
-ssh-copy-id 
+ssh-copy-id user@node ip.
+
+Ex:  ssh-copy-id ansible@172.31.44.53
