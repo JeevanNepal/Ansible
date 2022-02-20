@@ -1,1 +1,11 @@
 Ad Hoc, Modules & Playbook:
+
+Ad Hoc Commands are those linux commands which does not have no ideampotency which means that it does the same task repetatively.
+
+
+
+Modules: It is a single command which esecutes one at a time.
+
+
+
+Playbook: It is a combination of modules with miltiple commands which executes the file all at once.
