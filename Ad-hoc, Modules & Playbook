@@ -1,6 +1,11 @@
 Ad-hoc commands, Modules & Playbook:
 
 Ad-hoc Commands are those linux commands which does not have no ideampotency which means that it does the same task repetatively.
+These are commands which can be run individually to perform quick functions.
+These ad-hoc commands are are not use for configuration management and deployment because these commands are only for one time usage.
+The ansible ad-hoc commands uses the /usr/bin/ansible command line tool to automate tasks.
+
+
 
 
 
