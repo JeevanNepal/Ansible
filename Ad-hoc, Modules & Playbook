@@ -5,7 +5,7 @@ These are commands which can be run individually to perform quick functions.
 These ad-hoc commands are are not use for configuration management and deployment because these commands are only for one time usage.
 The ansible ad-hoc commands uses the /usr/bin/ansible command line tool to automate a single task.
 
-
+$ ansible groupname(demo) -a "ls"
 
 
 
