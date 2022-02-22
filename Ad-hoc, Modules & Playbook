@@ -7,6 +7,7 @@ The ansible ad-hoc commands uses the /usr/bin/ansible command line tool to autom
 
 $ ansible groupname(demo) -a "ls"
 
+if we want to see all the files in all the nodes then run: asible all -a "ls"
 
 
 Modules: It is a single command which esecutes one at a time.
