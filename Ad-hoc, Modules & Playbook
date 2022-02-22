@@ -8,6 +8,10 @@ The ansible ad-hoc commands uses the /usr/bin/ansible command line tool to autom
 $ ansible groupname(demo) -a "ls"
 
 if we want to see all the files in all the nodes then run: asible all -a "ls"
+To create a file in 1000s of nodes we can run the command: ansible all -a "touch filename(ABC)"
+
+
+
 
 
 Modules: It is a single command which esecutes one at a time.
