@@ -11,9 +11,9 @@ if we want to see all the files in all the nodes then run: asible all -a "ls"
 To create a file in 1000s of nodes we can run the command: ansible all -a "touch filename(ABC)"
 To list all details of a group run: ansible demo(group name) -a "la -al"
 
-To install the packages in all the nodes through server run : ansible demo -a "sudo yum install httpd -y"
+To install/remove the packages in all the nodes through server run : ansible demo -a "sudo yum install httpd -y" / ansible demo -a "yum remove httpd -y"
 
-To check the package in ny of the node run: which package name(httpd)
+To check the package in any of the node run: which package name(httpd)
 
 
 
