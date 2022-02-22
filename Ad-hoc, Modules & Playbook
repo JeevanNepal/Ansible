@@ -16,44 +16,15 @@ To install/remove the packages in all the nodes through server run : ansible dem
 To check the package in any of the node run: which package name(httpd)
 
 
+----------------------------------------------------------------------------------------------------------------
 
+#Modules: 
+It is a single command which executes one at a time.
 
+Ansible ships with number of modules (called module library) that can be executed diectly on the remote hosts through "playbook"
+Module library resides on any machines and there are no servers, daemins or database required.
+The default location for the inventory file is /etc/ansible/hosts
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Modules: It is a single command which esecutes one at a time.
 
 
 
