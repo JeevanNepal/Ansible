@@ -25,6 +25,17 @@ Ansible ships with number of modules (called module library) that can be execute
 Module library resides on any machines and there are no servers, daemins or database required.
 The default location for the inventory file is /etc/ansible/hosts
 
+[ansible@ip]$ ansible demo -b -m yum -a "pkg= httpd state=present"
+
+
+Present= install
+Absent=remove
+Latest=update
+Started=to start the service
+
+module name will preceed -m (module name) service.
+
+Create user: ansible demo -b -m user -a "name=raj"
 
 
 
