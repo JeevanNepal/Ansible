@@ -38,10 +38,15 @@ sudo service httpd status- to check the status of the service.
 module name will preceed -m (module name) service.
 
 Create user: ansible demo -b -m user -a "name=raj"
+To check the user: cat /etc/passwd
+
 
 
 DEMO:
 [ansible@ip-172-31-35-13 ~]$ ansible demo -b -m yum -a "pkg=httpd state=present"
+[ansible@ip-172-31-35-13 ~]$ ansible demo -b -m service -a "name=httpd state=started"
+
+
 
 
 
