@@ -46,7 +46,7 @@ DEMO:
 [ansible@ip-172-31-35-13 ~]$ ansible demo -b -m yum -a "pkg=httpd state=present"
 [ansible@ip-172-31-35-13 ~]$ ansible demo -b -m service -a "name=httpd state=started"
 
-
+To Copy a file or folder in one or more nodes from source to destination: ansible demo[-1] -b -m copy -a "src=copiedfromserver dest=/tmp"
 
 
 
