@@ -38,6 +38,10 @@ module name will preceed -m (module name) service.
 Create user: ansible demo -b -m user -a "name=raj"
 
 
+DEMO:
+[ansible@ip-172-31-35-13 ~]$ ansible demo -b -m yum -a "pkg=httpd state=present"
+
+
 
 Playbook: It is a combination of modules with miltiple commands which executes the file all at once.
 
