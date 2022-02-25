@@ -32,6 +32,8 @@ Present= install
 Absent=remove
 Latest=update
 Started=to start the service
+sudo service httpd status- to check the status of the service.
+
 
 module name will preceed -m (module name) service.
 
