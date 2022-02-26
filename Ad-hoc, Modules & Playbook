@@ -48,7 +48,15 @@ DEMO:
 
 To Copy a file or folder in one or more nodes from source to destination: ansible demo[-1] -b -m copy -a "src=copiedfromserver dest=/tmp"
 
+
+
+
+
 Setup is a module which holds the information of all the installed packages.
+$ ansible demo -b - m setup
+
+
+
 
 Playbook: It is a combination of modules with miltiple commands which executes the file all at once.
 
