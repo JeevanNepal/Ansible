@@ -55,6 +55,7 @@ To Copy a file or folder in one or more nodes from source to destination: ansibl
 Setup is a module which holds the information of all the installed packages.
 $ ansible demo -b - m setup
 
+To fetch the IP of any node run : ansible group name -b -m setup -a "filter=*ipv4*"
 
 
 
