@@ -6,3 +6,20 @@ Playbook in ansible are written in YAML format.
 It is human readable readable data serilization language.
 It is like a file where we write codes which consists of var, tasks, handlesrs, files, templates and roles.
 
+Each playbook is composed of one or more modules in a list. MOdules is a colleaction of configuration files.
+
+Playbook are divided into many sections like: 
+1. Target Section: Defines the host against which playbook task has to be executed.
+
+
+2. Variables Section: Define variables.
+
+3. Task Section: List of all modules that we need to run in an order.
+
+
+
+YAML: Yet Another Markup Language:
+----------------------------------
+
+For ansible, nearly every YAML files starts with a list.
+
