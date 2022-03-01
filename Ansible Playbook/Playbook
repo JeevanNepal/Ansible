@@ -2,4 +2,7 @@ Ansible Playbook:
 ----------------
 It is a combination of modules with miltiple commands which executes the file all at once.
 
+Playbook in ansible are written in YAML format.
+It is human readable readable data serilization language.
+
 
