@@ -4,5 +4,5 @@ It is a combination of modules with miltiple commands which executes the file al
 
 Playbook in ansible are written in YAML format.
 It is human readable readable data serilization language.
-
+It is like a file where we write codes which consists of var, tasks, handlesrs, files, templates and roles.
 
