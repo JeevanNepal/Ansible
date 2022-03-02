@@ -24,3 +24,6 @@ YAML: Yet Another Markup Language:
 For ansible, nearly every YAML files starts with a list.
 Each item in the list is a list of key-value pairs commonly knows as dictionary.
 
+
+All YAML files have to begin with "---" and ends with "...".
+All members of a list lines must begin with same indentation level starting with "-"
