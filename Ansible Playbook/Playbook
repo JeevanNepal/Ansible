@@ -27,3 +27,16 @@ Each item in the list is a list of key-value pairs commonly knows as dictionary.
 
 All YAML files have to begin with "---" and ends with "...".
 All members of a list lines must begin with same indentation level starting with "-"
+
+Ex: 
+  --- # My Target Playbook
+  - hosts: demo(group name)
+    user: ansible
+    decome: yes
+    connection: ssh
+    gather-facts: yes
+    
+    
+Run the file: ansible-playbook target.yml
+
+
