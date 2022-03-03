@@ -1,2 +1,4 @@
 Variables:
 ---------
+Ansible uses variables which are defined previously to enable more flexibility in playbook and roles.
+They can be used to loop through a set of given values, access various information like the host name of a system and replace certain strings in templates with specific values.
