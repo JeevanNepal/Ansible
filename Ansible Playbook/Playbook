@@ -40,3 +40,21 @@ Ex:
 Run the file: ansible-playbook target.yml
 
 
+
+Now create as task:
+
+ --- # My Task Playbook
+ - hosts: demo(group name)
+    user: ansible
+    decome: yes
+    connection: ssh
+    gather-facts: yes
+    tasks:
+     - name: install httpd in linux server
+       action: yum name=httpd stste=installed
+       
+       Run the playbook.
+       
+       
+       
+       
