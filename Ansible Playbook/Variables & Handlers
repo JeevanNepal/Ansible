@@ -17,3 +17,35 @@ File: vars.yml
   tasks:
    - name: install httpd on linux server
      action: yum name='{{pkgname}}' state=installed
+     
+     
+Handlers Playbook:
+------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ansible@ip-172-31-35-13 ~]$ ansible-playbook handler.yml 
+--- # My Handler Playbook
+- hosts: demo
+  user: ansible
+become: yes
+  connection: ssh
+  tasks:
+    - name: install httpd on linux server
+action: yum name=httpd state=installed
+notify: restart httpd
+  handlers:
+    - name: restart httpd
+action: service name=httpd state=restarted
