@@ -49,3 +49,12 @@ notify: restart httpd
   handlers:
     - name: restart httpd
 action: service name=httpd state=restarted
+
+
+
+
+DRYRUN Check:
+------------
+Checks whether the playbook is formatted correctly.
+
+ansible-playbook handler.yml --check
