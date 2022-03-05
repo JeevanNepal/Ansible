@@ -51,3 +51,24 @@ DRYRUN Check:
 Checks whether the playbook is formatted correctly.
 
 ansible-playbook handler.yml --check
+
+
+
+
+LOOPS:
+-----
+Sometimes we work to repeat a task multiple times. In computer programming this is called loop. Common ansible loops include changing owner on several files / directories with the file
+module, and repeating a polling step until certain result in reached.
+
+--- # My Loops Playbook
+- hosts: demo
+  user: ansible
+become: yes
+  connection: ssh
+  tasks:
+    - name: add a list of users in my nodes
+user: name='{{item}}' state=present
+with_items:
+- Biken
+- Chandan
+- Deepak
