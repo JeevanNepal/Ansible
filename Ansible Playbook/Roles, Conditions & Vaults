@@ -1,2 +1,18 @@
 Conditions:
 ----------
+
+
+
+
+--- # My Condition Playbook
+- hosts: demo
+  user: ansible
+become: yes
+  connection: ssh
+  tasks:
+    - name: install apache on debian
+command: apt-get -y install apache2
+when: ansible_os_family=="Debian"
+    - name: install apache on redhat
+command: yum -y install httpd
+when: ansible_os_family=="Redhat"
