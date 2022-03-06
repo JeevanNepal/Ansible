@@ -14,3 +14,43 @@ when: ansible_os_family=="Debian"
     - name: install apache on redhat
 command: yum -y install httpd
 when: ansible_os_family=="Redhat"
+
+
+
+
+
+Vaults:
+------
+Ansible allows keeping sensative data such as password or keys in encryptes files rather than a plaintext in our playbooks.
+
+
+Creating a new encrypted Playbook:
+----------------------------------
+ansible-vault create vault.yml
+
+
+
+
+
+Editning in encrypted Playbook:
+------------------------------
+ansible-vault edit vault.yml(filename)
+
+
+
+
+To Change Password:
+------------------
+ansible-vault rekey filename.
+
+
+
+To Encrypt an existing files:
+--------------------------
+ansible-vault encrypt filname.
+
+
+
+To decrypt an existing file:
+---------------------------
+ansible-vault decrypt filename.
