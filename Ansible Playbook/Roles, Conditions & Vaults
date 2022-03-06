@@ -1,8 +1,6 @@
 Conditions:
 ----------
-
-
-
+Whenever we have different scenarios, we put or use conditions accordingly to the scenario.
 
 --- # My Condition Playbook
 - hosts: demo
