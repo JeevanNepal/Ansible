@@ -54,3 +54,10 @@ ansible-vault encrypt filname.
 To decrypt an existing file:
 ---------------------------
 ansible-vault decrypt filename.
+
+
+
+
+Roles:
+------
+
