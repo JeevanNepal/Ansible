@@ -61,3 +61,22 @@ ansible-vault decrypt filename.
 Roles:
 ------
 
+
+
+
+
+
+
+[ansible@ip-172-31-35-13 ~]$ mkdir -p playbook/roles/webserver/tasks
+[ansible@ip-172-31-35-13 ~]$ tree
+.
+├── condition.yml
+├── handler.yml
+├── loops.yml
+├── playbook
+│   └── roles
+│       └── webserver
+│           └── tasks
+├── target.yml
+├── tasks.tml
+└── vars.yml
