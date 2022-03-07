@@ -60,11 +60,26 @@ ansible-vault decrypt filename.
 
 Roles:
 ------
+We cna use two techniques for reusing a set of tasks:
+1. Includes &
+2. Roles.
 
+Roles are good for orginising tasks and encapsulating data needed to accomplished those tasks.
 
+Types of Roles:
 
+- Default: It stores the data about role/application. Default variables.
 
+- Files: It contains files need to be transferred to the remote VM (static files).
 
+- Handlers: They are triggered or tasks we can segerate all the handlers required in playbook.
+
+- Meta: This directories contains files that establish rles dependencies.
+Eg: Author nae, supportted platform or dependencies if any.
+
+- Tasks: It contains all the tasks that is normally in the playbook.
+
+- Vars: Variables for the role can be sprcified in this directory and used in our confirguration files both vars and default store variables.
 
 
 [ansible@ip-172-31-35-13 ~]$ mkdir -p playbook/roles/webserver/tasks
@@ -80,3 +95,24 @@ Roles:
 ├── target.yml
 ├── tasks.tml
 └── vars.yml
+
+
+mail.yml
+
+ - name: install apache on redhat
+   yum: pkg=httpd state=latest.
+   
+
+Now create a master file: master.yml
+--- # Master Playbook
+- hosts: all(demo)
+user: ansible
+become: yes
+connection: ssh
+role:
+  - webserver
+  
+  
+
+
+
