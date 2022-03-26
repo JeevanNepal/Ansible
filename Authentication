@@ -28,6 +28,9 @@ ansible all --list-host
 
 ansible <groupname>[0] --list-host
 
+
+Push
+
 <groupname>[0] - picks first machine of the group.
 
 <groupname>[1] - picks second machine of the group.
