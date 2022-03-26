@@ -43,3 +43,8 @@ If we have multiple groups use : to pick the machines in the group.
 
 group1:group2
 ex: demo[2:5]: devops[4:8]
+
+
+
+
+wwww
